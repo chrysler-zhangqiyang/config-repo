@@ -1,0 +1,9 @@
+env: dev1
+zuul:
+  ignored-patterns:
+  - /**/product/listForOrder
+  routes:
+    myPath:
+      path: /myProduct/**
+      sensitiveHeaders: ''
+      serviceId: product
